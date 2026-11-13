@@ -1,41 +1,27 @@
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/biogram)](https://cran.r-project.org/package=biogram)
-[![Downloads](http://cranlogs.r-pkg.org/badges/biogram)](https://cran.r-project.org/package=biogram)
-[![Build Status](https://api.travis-ci.org/michbur/biogram.png)](https://travis-ci.org/michbur/biogram)
-[![codecov.io](https://codecov.io/github/michbur/biogram/coverage.svg?branch=master)](https://codecov.io/github/michbur/biogram?branch=master) 
+# biogram
 
+Extraction and analysis of n-grams (k-mers) from biological sequences, with a quick permutation test (QuiPT) for feature filtering.
 
-biogram package
-------------
+Compatibility updates by Renova.
 
-This package contains tools for extraction and analysis of various
-n-grams (sequences of n items) derived from biological sequences (proteins
-or nucleic acids). To deal with the curse of dimensionality of the n-grams,
-biogram uses Quick Permutation Test (QuiPT) for fast feature filtering.
+Version 1.6.3.9001 changes only documentation: links to the optional `seqinr` package that did not resolve are written as plain text, three unbraced `{b}` are written as `\code{b}`, and the `\value` list in the `cluster_reg_exp` help page uses valid `\item` markup. No R function was changed.
 
-Installation
-------------
+## Install
 
-biogram is available [on CRAN](https://cran.r-project.org/package=biogram), so installation is as simple as:
-
-```
-install.packages("biogram")
+```r
+install.packages("biogram", repos = c(
+  Renova = "https://renova-r.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
 ```
 
-You can install the latest development version of the code using the `devtools` R package.
+Or install this exact release from its tag:
 
-```
-# Install devtools, if you haven't already.
-install.packages("devtools")
-
-library(devtools)
-install_github("michbur/biogram")
+```r
+install.packages("remotes")
+remotes::install_github("renova-r/biogram@renova-1.6.3.9001")
 ```
 
-For citation type:
+[Release notes](NEWS.md) · [Renova package directory](https://github.com/renova-r/revival-catalog)
 
-```
-citation("biogram")
-```
-
-or use:
-Michal Burdukiewicz, Piotr Sobczyk and Chris Lauber (2016). biogram: N-Gram Analysis of Biological Sequences. R package version 1.3. https://cran.r-project.org/package=biogram
+biogram is by Michal Burdukiewicz (maintainer), Piotr Sobczyk, Chris Lauber and Dominik Rafacz, with a contribution from Katarzyna Sidorczuk; the original project is at <https://github.com/michbur/biogram>. See `citation("biogram")`. License: GPL-3; see [COPYING](COPYING).

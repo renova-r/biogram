@@ -22,5 +22,5 @@ in FASTA format.
   }
 }
 \seealso{
-\code{\link[seqinr]{read.fasta}}: heavier function for processing FASTA files.
+\code{read.fasta} from the \pkg{seqinr} package: heavier function for processing FASTA files.
 }

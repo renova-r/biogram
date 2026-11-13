@@ -18,5 +18,5 @@ A lightweight tool to read nucleic or amino-acid sequences from a file
 in FASTA format.
 }
 \seealso{
-\code{\link[seqinr]{write.fasta}}: heavier function for writing FASTA files.
+\code{write.fasta} from the \pkg{seqinr} package: heavier function for writing FASTA files.
 }

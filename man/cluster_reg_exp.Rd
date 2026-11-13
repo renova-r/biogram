@@ -11,12 +11,10 @@ cluster_reg_exp(ngrams)
 }
 \value{
 List of four
-\itemize{
- \item{"regExps"}{regular expression in best clustering}
- \item{"seqClustering"}{clustering of sequences in best clustering}
- \item{"allRegExps"}{all regular expressions.}
- \item{"allIndices"}{all clusterings}
-}
+\item{regExps}{regular expression in best clustering}
+\item{seqClustering}{clustering of sequences in best clustering}
+\item{allRegExps}{all regular expressions.}
+\item{allIndices}{all clusterings}
 }
 \description{
 Clusters sequences hierarchically with regular expressions.

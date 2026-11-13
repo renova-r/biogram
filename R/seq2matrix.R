@@ -2,7 +2,7 @@
 #'
 #' Converts list of sequences to matrix.
 #' @param seq_list list of sequences (e.g. as returned by 
-#' the \code{\link[seqinr]{read.fasta}} function).
+#' the \code{read.fasta} function from the \pkg{seqinr} package).
 #' @keywords manip
 #' @return A matrix with the number of rows equal to the number of sequences and the 
 #' number of columns equal to the length of the longest sequence.

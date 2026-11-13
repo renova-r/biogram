@@ -7,7 +7,7 @@
 #' @return a list of sequences.
 #' @export
 #' @seealso 
-#' \code{\link[seqinr]{read.fasta}}: heavier function for processing FASTA files.
+#' \code{read.fasta} from the \pkg{seqinr} package: heavier function for processing FASTA files.
 #' @examples 
 #' \dontrun{
 #'   read_fasta("https://www.uniprot.org/uniprot/P28307.fasta")
@@ -37,7 +37,7 @@ read_fasta <- function(file) {
 #' @param nchar the number of characters per line.
 #' @export
 #' @seealso 
-#' \code{\link[seqinr]{write.fasta}}: heavier function for writing FASTA files.
+#' \code{write.fasta} from the \pkg{seqinr} package: heavier function for writing FASTA files.
 write_fasta <- function(seq, file, nchar = 80) {
   char_vec <- unlist(lapply(1L:length(seq), function(ith_id) 
     c(paste0(">", names(seq[ith_id])), 

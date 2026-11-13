@@ -8,7 +8,7 @@ list2matrix(seq_list)
 }
 \arguments{
 \item{seq_list}{list of sequences (e.g. as returned by 
-the \code{\link[seqinr]{read.fasta}} function).}
+the \code{read.fasta} function from the \pkg{seqinr} package).}
 }
 \value{
 A matrix with the number of rows equal to the number of sequences and the 

@@ -11,7 +11,7 @@ calc_pi(a, b)
 about the required structure of encoding).}
 
 \item{b}{encoding to which \code{a} should be compared. Must have equal number 
-of groups or less than \code{a}. Both \code{a} and {b} must have the the same 
+of groups or less than \code{a}. Both \code{a} and \code{b} must have the the same 
 number of elements.}
 }
 \value{
